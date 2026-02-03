@@ -14,11 +14,11 @@ The Protein Complex Orthology Cartographer (PCOC) is a collection of scripts in 
 - download odb12 odb12v0_OG2genes.tab
 - generate your taxon specific tabfile
 
-> the script generate_odb12_tabfile.sh takes a list of taxon numbers of interest as an input query and a prospective NCBI taxonomy tree filename as an output query of the form: <./generate_odb12_tabfile.sh TaxonLists/querylist.txt querytree>
+- to generate an odb12 tabfile, the script generate_odb12_tabfile.sh takes a list of taxon numbers as an input query and a prospective NCBI taxonomy tree filename as an output query of the form:
+>  <./generate_odb12_tabfile.sh TaxonLists/querylist.txt querytree>
+    - the output of the script, if the taxa are in odb12, is a tabfile corresponding to every gene from every taxon represented in odb12 and an NCBI taxonomy tree, corresponding to all taxa in the taxonlist, retrieved by automatically running the script, Get_taxid_newick.py.
 
-> the output of the script, if the taxa are in odb12, is a tabfile corresponding to every gene from every taxon represented in odb12 and an NCBI taxonomy tree, corresponding to all taxa in the taxonlist, retrieved by automatically running the script, Get_taxid_newick.py.
-
- - To generate a linear repertoire of proteins per orthogroup per taxa, run generate_compOG_repertoire.R as follows:
+- To generate a linear repertoire of proteins per orthogroup per taxa, run generate_compOG_repertoire.R as follows:
 > <Rscript generate_compOG_repertoire.R TabFiles/Tabfile.tab TreeFiles/Treefile.nwk>
 
 - To generate a histogram, describing the number of identified orthogroups per species, run generate_compOG_totals.R as follows:
