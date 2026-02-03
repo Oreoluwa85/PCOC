@@ -1,6 +1,6 @@
-# OrthoMate
+# PCOC
 
-This is a collection of scripts in python3 and R, that generate heatmaps corresponding to the numbers of proteins present in [OrthoDB v12](https://www.ezlab.org/orthodb.html). OrthoDB has a mapping function, available with a subscription. This collection of scripts retrieves NCBI taxonomy trees and numbers of proteins per taxa represented in odb12 for a subset of user selected orthogroups.
+The Protein Complex Orthology Cartographer (PCOC) is a collection of scripts in python3 and R, that generate heatmaps corresponding to the numbers of proteins present in [OrthoDB v12](https://www.ezlab.org/orthodb.html). This collection of scripts retrieves NCBI taxonomy trees and numbers of proteins per taxa represented in odb12 for a subset of user selected orthogroups.
 
 # Requirements
 - Bash
