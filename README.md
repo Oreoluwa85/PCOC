@@ -1,6 +1,6 @@
 # PCOC
 
-The Protein Complex Orthology Cartographer (PCOC) is a collection of scripts in python3 and R, that generate heatmaps corresponding to the numbers of proteins present in [OrthoDB v12](https://www.ezlab.org/orthodb.html). This collection of scripts retrieves NCBI taxonomy trees and numbers of proteins per taxa represented in odb12 for a subset of user selected orthogroups.
+The Protein Complex Orthology Cartographer (PCOC) is a collection of scripts in python3 and R, that generate heatmaps corresponding to the numbers of proteins present in [OrthoDB v12](https://www.ezlab.org/orthodb.html). This collection of scripts retrieves NCBI taxonomy trees and numbers of proteins per taxa represented in odb12v0 for a subset of user selected orthogroups.
 
 # Requirements
 - Bash
@@ -28,8 +28,16 @@ The Protein Complex Orthology Cartographer (PCOC) is a collection of scripts in 
 - To generate an all-against-all, pairwise heatmap comparison of numbers of proteins per pair of compOGs, related by heterodimeric interactions for all taxa of a given list, run generate_compOG_pair_repertoire.R as follows:
 > <Rscript generate_compOG_pair_repertoire.R TabFiles/Tabfile.tab>
 
-- To generate an all-against-all, pairwise heatmap comparison of numbers of proteins per pair of compOGs, related by heterodimeric interactions for an individual taxo, run generate_compOG_pair_score.R as follows:
+- To generate a pairwise heatmap with categorisation of macromolecular complex participation of each pair and margin histograms easier quantification of proteins in compOGs on x and y axes, run generate_compOG_pair_repertoire_HL.R as follows:
+> <Rscript generate_compOG_pair_repertoire_HL.R TabFiles/Tabfile.tab>
+
+- To generate an all-against-all, pairwise heatmap comparison of numbers of proteins per pair of compOGs, related by heterodimeric interactions for an individual taxon, run generate_compOG_pair_score.R as follows:
 > <Rscript generate_compOG_pair_score.R TabFiles/Tabfile.tab>
 
+# Citation
+
+If you make use of the PCOC, please cite Francis, O. (2026) ‘Quantified duplications of proteins within complexes across eukaryotes’. bioRxiv, p. 2026.02.23.705090. Available at: https://doi.org/10.64898/2026.02.23.705090.
+
+Associated tables for this document are in the folder [Francis_2026_tables](./Francis_2026_tables/)
 
 
